@@ -1,7 +1,13 @@
+## Wichtig!
+Seite welche den QR Code ausgibt bzw. das Snippet benutzt darf keine Unterseite sein.
+
 ## Diesen QR-Code-Ergzeuger noch hier einfügen
 - QR-Code-Erzeugung: http://sourceforge.net/apps/mediawiki/phpqrcode/index.php?title=Main_Page
 
-## Benötigt das Snippet zur Abfrage ob alle Schilder erledigt sind und dann erst QR-Code ausgibt.
+## In dem Verzeichnis noch einen Ordenr "qrbild" erstellen
+Hier werden die QR-Code gespeichert.
+
+## Benötigt das folgende Snippet zur Abfrage ob alle Schilder erledigt sind und dann erst QR-Code ausgibt.
 QR-Ausgabe-Erledigte-Schilder
 ```<?php
 session_start();
