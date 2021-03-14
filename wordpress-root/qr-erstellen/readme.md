@@ -1,7 +1,8 @@
 ## Diesen QR-Code-Ergzeuger noch hier einfügen
 - QR-Code-Erzeugung: http://sourceforge.net/apps/mediawiki/phpqrcode/index.php?title=Main_Page
 
-##Benötigt das Snippet zur Abfrage ob alle Schilder erledigt sind und dann erst QR-Code ausgibt.
+## Benötigt das Snippet zur Abfrage ob alle Schilder erledigt sind und dann erst QR-Code ausgibt.
+QR-Ausgabe-Erledigte-Schilder
 ```<?php
 session_start();
 $sessionIDStr = session_id();
