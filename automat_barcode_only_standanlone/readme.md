@@ -9,12 +9,12 @@
 
 ## Raspberry einrichten
 
+kurze Anweisung
 
-
-## Check auf Updates für den Rasberry eingabe in CMD (sollte man sich für später merken und ab un zu mach ausführen)
+### Check auf Updates für den Rasberry eingabe in CMD (sollte man sich für später merken und ab un zu mach ausführen)
 sudo apt-get update
 
-## Installiere folgende Pakete per CMD auf dem Raspberry damit das Skript problemlos läuft
+### Installiere folgende Pakete per CMD auf dem Raspberry damit das Skript problemlos läuft
 sudo apt-get install python3-opencv
 
 sudo apt-get install libqt4-test python3-sip python3-pyqt5 libqtgui4 libjasper-dev libatlas-base-dev -y
