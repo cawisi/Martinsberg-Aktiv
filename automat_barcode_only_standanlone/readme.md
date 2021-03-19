@@ -38,7 +38,7 @@
 
     Für Raspberry-Verkabelung:
     
-        Beispiel: https://www.amazon.de/gp/product/B07QX51F3B/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
+    Beispiel: https://www.amazon.de/gp/product/B07QX51F3B/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1
         
 - Gehäuse für alles Marke Eigenbau
 
