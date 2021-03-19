@@ -36,6 +36,8 @@ Die folgenden Befehle sind für die Eingabe in das Terminal.
 ### Check auf Updates für den Rasberry eingabe in CMD (sollte man sich für später merken und ab un zu mach ausführen)
 ```sudo apt-get update```
 
+```sudo apt-get upgrade```
+
 ### Installiere folgende Pakete per CMD auf dem Raspberry damit das Skript problemlos läuft
 ```sudo apt-get install python3-opencv```
 
