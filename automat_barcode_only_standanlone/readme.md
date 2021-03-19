@@ -47,10 +47,10 @@ Die folgenden Befehle sind für die Eingabe in das Terminal.
 
 ```sudo modprobe bcm2835-v4l2```
 
+```sudo apt-get install sqlite3```
+
 #### SQLite Browser installieren (optional) macht es meiner Ansicht nach einfacher später auf der graphischen Oberfläche
 ```sudo apt-get update```
-
-```sudo apt-get install sqlite3```
 
 ```sudo apt-get install sqlitebrowser```
 
@@ -75,8 +75,7 @@ Jetzt kann man sich mit der Remote Desktopverbindung von Windows und der IP-Adre
     ```sudo nano /etc/xdg/lxsession/LXDE-pi/autostart```
     
     Hier einfügen:
-    
-       ```@lxterminal -e python3 /home/pi/Desktop/Belohnungsautomat/main.py``` 
+    ```@lxterminal -e python3 /home/pi/Desktop/Belohnungsautomat/main.py``` 
         
 ### Software in Betrieb nehmen
 1. Die Datenbank für die QR-Werte ist schon gefüllt und enthält 10000 Werte ich hoffe das reicht für den Anfang.
