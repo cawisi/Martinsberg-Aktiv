@@ -54,15 +54,19 @@ https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
 1. Kopiere den Ordner "Belohnungsautomat" auf den Desktop des Raspberry
 2. Progamm in die Autostart-Varianten einfügen damit ich auch immer läuft ;)
 - Autostart vor Login
+
    ```sudo nano /etc/rc.local```
    
    Dort eintragen: ```/home/pi/Desktop/Belohnungsautomat/main.py &``` mit & Zeichen.
+   
    Mit STRG + O speichern und mit STRG + X schließen
         
 - Auotstar nach Login mit öffenen des DEBUG Fensters
+
     ```sudo nano /etc/xdg/lxsession/LXDE-pi/autostart```
     
     Hier einfügen:
+    
        ```@lxterminal -e python3 /home/pi/Desktop/Belohnungsautomat/main.py``` 
         
 ### Software in Betrieb nehmen
