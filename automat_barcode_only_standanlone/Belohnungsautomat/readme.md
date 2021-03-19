@@ -7,4 +7,4 @@ automatrestauswurf.db ist die Datenbank welche verwaltet wie viele Belohnungen n
 
 spirale_nachfüllen.py ist die Datei zum Nachfüllen der Belohnungen hier wird die automatrestauswurf.db geändert nach den Benutzerabfragen. Fall man nur eine Spirale hat lässt man die zweite einfach auf 0.
 
-main_funktion.py ist die Hauptfunktion. Hier muss ggf. die Richtung des Motor gedreht werden in der Abfrage. Bedeutet man muss aus forward1 in backwards1 ändern falls der Motor falsch herum läuft. Selbiges für den zweiten Motor nur mit 2 statt 1. Ist im Code aber auch an der passenden Stelle kommentiert.
+main_funktion.py ist die Hauptfunktion. Hier muss ggf. die Richtung des Motor gedreht werden in der Abfrage. Bedeutet man muss aus forward1 in backwards1 machen falls der Motor falsch herum läuft. Selbiges für den zweiten Motor nur mit 2 statt 1. Ist im Code aber auch an der passenden Stelle kommentiert.
