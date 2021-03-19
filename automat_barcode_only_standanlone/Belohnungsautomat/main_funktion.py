@@ -33,10 +33,10 @@ def scan(self):
                     GPIO.output(15, 1)
                     ausgabe_text(zustand)
                     if db_get_wert(db_verbindungrest,"spirale1") > 0:
-                        forward1(0.005,8*64) #ändern auf backward1 falls Spirale falschherum läuft
+                        forward1(0.005,8*64) #ändern auf backward1 falls Spirale falschherum läuft, sowie die Schritte des Motor für eine Umdrehung nach dem Komma ist der Wert für die Schritte.
                         db_update_wert(db_verbindungrest,"spirale1",db_get_wert(db_verbindungrest,"spirale1")-1)
                     else:
-                        forward2(0.005,8*64) #ändern auf backward2 falls Spirale falschherum läuft
+                        forward2(0.005,8*64) #ändern auf backward2 falls Spirale falschherum läuft, sowie die Schritte des Motor für eine Umdrehung nach dem Komma ist der Wert für die Schritte.
                         db_update_wert(db_verbindungrest,"spirale2",db_get_wert(db_verbindungrest,"spirale2")-1)
                     db_delete(db_verbindungqr,qrwert)
                     GPIO.output(15, 0)
