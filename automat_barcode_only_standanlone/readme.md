@@ -42,6 +42,12 @@
         
 - Gehäuse für alles Marke Eigenbau
 
+- Spirale zum auswurf der Belohnung ich habe eine gebrauchte aus einem Süßigkeitenautomat auf Ebay gefunden
+
+    Beispiel: Spirale Spiralen für Wurlitzer Automaten BL + SL Typ paarweise (links und rechts)
+    
+    https://www.ebay.de/itm/Spirale-Spiralen-f%C3%BCr-Wurlitzer-Automaten-BL-SL-Typ-paarweise-links-und-rechts/183549025734?ssPageName=STRK%3AMEBIDX%3AIT&var=690908923550&_trksid=p2060353.m1438.l2649
+
 
 ## Raspberry einrichten 
 https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
