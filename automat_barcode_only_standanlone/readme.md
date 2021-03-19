@@ -30,7 +30,9 @@
 ## Raspberry einrichten 
 https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
 
-
+Ich habe die Einrichtung über SSH gemacht. Hierzu ist "Putty" ein gutes Programm für Windows. ACHTUNG SSH muss im Raspberry erst aktiviert werden.
+    https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+Die folgenden Befehle sind für die Eingabe in das Terminal.
 ### Check auf Updates für den Rasberry eingabe in CMD (sollte man sich für später merken und ab un zu mach ausführen)
 ```sudo apt-get update```
 
@@ -43,12 +45,17 @@ https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
 
 ```sudo modprobe bcm2835-v4l2```
 
-#### SQLite Browser installieren (optional) macht es meiner Ansicht nach einfacher
+#### SQLite Browser installieren (optional) macht es meiner Ansicht nach einfacher später auf der graphischen Oberfläche
 ```sudo apt-get update```
 
 ```sudo apt-get install sqlite3```
 
 ```sudo apt-get install sqlitebrowser```
+
+### Remote Desktopverbindung (optional) wird aber für den Zugriff der graphischen Oberfläche auf den Raspberry ohne Tastatur und Bildschirm benötigt.
+```sudo apt-get install xrdp```
+
+Jetzt kann man sich mit der Remote Desktopverbindung von Windows und der IP-Adresse des Raspberry auf dem Raspberry einloggen.
 
 ### Software installation Automat
 1. Kopiere den Ordner "Belohnungsautomat" auf den Desktop des Raspberry
