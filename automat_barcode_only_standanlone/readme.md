@@ -32,39 +32,39 @@ https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
 
 
 ### Check auf Updates für den Rasberry eingabe in CMD (sollte man sich für später merken und ab un zu mach ausführen)
-sudo apt-get update
+```sudo apt-get update```
 
 ### Installiere folgende Pakete per CMD auf dem Raspberry damit das Skript problemlos läuft
-sudo apt-get install python3-opencv
+```sudo apt-get install python3-opencv```
 
-sudo apt-get install libqt4-test python3-sip python3-pyqt5 libqtgui4 libjasper-dev libatlas-base-dev -y
+```sudo apt-get install libqt4-test python3-sip python3-pyqt5 libqtgui4 libjasper-dev libatlas-base-dev -y```
 
-pip3 install opencv-contrib-python==4.1.0.25
+```pip3 install opencv-contrib-python==4.1.0.25```
 
-sudo modprobe bcm2835-v4l2
+```sudo modprobe bcm2835-v4l2```
 
 #### SQLite Browser installieren (optional) macht es meiner Ansicht nach einfacher
-sudo apt-get update
+```sudo apt-get update```
 
-sudo apt-get install sqlite3
+```sudo apt-get install sqlite3```
 
-sudo apt-get install sqlitebrowser
+```sudo apt-get install sqlitebrowser```
 
 ### Software installation Automat
 1. Kopiere den Ordner "Belohnungsautomat" auf den Desktop des Raspberry
 2. Progamm in die Autostart-Varianten einfügen damit ich auch immer läuft ;)
     2.1. Autostart vor Login
-        sudo nano /etc/rc.local
-        Hier eintragen: /home/pi/Desktop/Belohnungsautomat/main.py &
+        ```sudo nano /etc/rc.local```
+        Hier eintragen: ```/home/pi/Desktop/Belohnungsautomat/main.py &``` mit & Zeichen!
         mit STRG + O speichern und mit STRG + X schließen
         
     2.2. Auotstar nach Login mit öffenen des DEBUG Fensters
-        sudo nano /etc/xdg/lxsession/LXDE-pi/autostart
-        Hier einfügen: @lxterminal -e python3 /home/pi/Desktop/Belohnungsautomat/main.py
+        sudo nano ```/etc/xdg/lxsession/LXDE-pi/autostart```
+        Hier einfügen: ```@lxterminal -e python3 /home/pi/Desktop/Belohnungsautomat/main.py```
 ### Software in Betrieb nehmen
 1. Die Datenbank für die QR-Werte ist schon gefüllt und enthält 10000 Werte ich hoffe das reicht für den Anfang.
 2. Die Datenbank für die Belohnungen (Spiralen) muss noch mit der Anzahl der eingesetzten Belohnungen gefüllt werden.
-    python3 /home/pi/Desktop/Belohnungsautomat/spiralen_nachfüllen.py
+    ```python3 /home/pi/Desktop/Belohnungsautomat/spiralen_nachfüllen.py```
 
 
 
