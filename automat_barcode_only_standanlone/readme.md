@@ -55,16 +55,21 @@ https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
 2. Progamm in die Autostart-Varianten einfügen damit ich auch immer läuft ;)
     2.1. Autostart vor Login
         ```sudo nano /etc/rc.local```
+        
         Hier eintragen: ```/home/pi/Desktop/Belohnungsautomat/main.py &``` mit & Zeichen!
+        
         mit STRG + O speichern und mit STRG + X schließen
         
     2.2. Auotstar nach Login mit öffenen des DEBUG Fensters
         sudo nano ```/etc/xdg/lxsession/LXDE-pi/autostart```
+        
         Hier einfügen: ```@lxterminal -e python3 /home/pi/Desktop/Belohnungsautomat/main.py```
+        
 ### Software in Betrieb nehmen
 1. Die Datenbank für die QR-Werte ist schon gefüllt und enthält 10000 Werte ich hoffe das reicht für den Anfang.
 2. Die Datenbank für die Belohnungen (Spiralen) muss noch mit der Anzahl der eingesetzten Belohnungen gefüllt werden.
     ```python3 /home/pi/Desktop/Belohnungsautomat/spiralen_nachfüllen.py```
+
 
 
 
