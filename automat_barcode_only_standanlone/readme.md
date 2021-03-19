@@ -31,7 +31,9 @@
 https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
 
 Ich habe die Einrichtung über SSH gemacht. Hierzu ist "Putty" ein gutes Programm für Windows. ACHTUNG SSH muss im Raspberry erst aktiviert werden.
+
     https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+    
 Die folgenden Befehle sind für die Eingabe in das Terminal.
 ### Check auf Updates für den Rasberry eingabe in CMD (sollte man sich für später merken und ab un zu mach ausführen)
 ```sudo apt-get update```
