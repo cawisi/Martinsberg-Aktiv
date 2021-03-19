@@ -22,17 +22,17 @@
 
     Beispiel: ARCTIC F12 - 120 mm Hochleistungs-Gehäuselüfter mit Standard-Gehäuse
     
-        https://www.amazon.de/gp/product/B002KTVFTE/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+    https://www.amazon.de/gp/product/B002KTVFTE/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
         
     Universal AC DC Netzteil, Steckernetzteil 12V 2A (2000mA, 5,5/2,5mm) Adapter
     
-        https://www.amazon.de/gp/product/B071RP442X/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
+    https://www.amazon.de/gp/product/B071RP442X/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
         
 - 4x Led´s
 
     Beispiel: 5 Stück 8mm 12/24V LED Metall Kontrollleuchte wasserdichte Signallampe Pilot Dash Directional Car Truck Boot mit Draht
     
-        https://www.amazon.de/gp/product/B08LDDH912/ref=ppx_yo_dt_b_asin_title_o03_s01?ie=UTF8&psc=1
+    https://www.amazon.de/gp/product/B08LDDH912/ref=ppx_yo_dt_b_asin_title_o03_s01?ie=UTF8&psc=1
         
 - Kabel und Stecker zum zusammenbauen
 
