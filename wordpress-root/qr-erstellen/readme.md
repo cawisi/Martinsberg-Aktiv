@@ -9,7 +9,8 @@ Hier werden die QR-Code gespeichert.
 
 ## Benötigt das folgende Snippet zur Abfrage ob alle Schilder erledigt sind und dann erst QR-Code ausgibt.
 QR-Ausgabe-Erledigte-Schilder
-```<?php
+```SQL
+<?php
 session_start();
 $servername = "db5001541733.hosting-data.io";
     $username = "dbu1595093";
