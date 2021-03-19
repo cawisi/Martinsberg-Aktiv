@@ -13,7 +13,7 @@ QR-Ausgabe-Erledigte-Schilder
 session_start();
 $servername = "db5001541733.hosting-data.io";
     $username = "dbu1595093";
-    $password = "cCeB8U2J5!uEzD7";
+    $password = "......";
     $dbname = "dbs1288901";
 // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
