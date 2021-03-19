@@ -4,6 +4,13 @@ Seite welche den QR Code ausgibt bzw. das Snippet benutzt darf keine Unterseite 
 ## Diesen QR-Code-Ergzeuger noch hier einfügen im Ordern "phpqrcode"
 - QR-Code-Erzeugung: http://sourceforge.net/apps/mediawiki/phpqrcode/index.php?title=Main_Page
 
+## Benötigte Datenbank 
+```SQL
+CREATE TABLE qrchecko (wert TEXT)
+```
+
+Dann nur noch die Datei "qrwerte.csv" in die Datenbank über "phpmyadmin" o.ä. importieren. Diese Werte sind gleich mit den Werten im Automaten, darüber geschied der Abgleich Der benutzte Wert wird jeweils gelöscht damit kein Missbrauch begangen wird. Allerdings wird auf dem Handy der Wert in der Session gespeichert um ggf. den QR-Code nochmal zu generieren falls man die Webseite verlässt. In der Datei "qrwerte.csv" sind 10000 Werte gespeichert.
+
 ## Benötigt das folgende Snippet zur Abfrage ob alle Schilder erledigt sind und dann erst QR-Code ausgibt.
 QR-Ausgabe-Erledigte-Schilder
 ```SQL
