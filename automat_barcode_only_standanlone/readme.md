@@ -47,3 +47,67 @@
     Beispiel: Spirale Spiralen für Wurlitzer Automaten BL + SL Typ paarweise (links und rechts)
     
     https://www.ebay.de/itm/Spirale-Spiralen-f%C3%BCr-Wurlitzer-Automaten-BL-SL-Typ-paarweise-links-und-rechts/183549025734?ssPageName=STRK%3AMEBIDX%3AIT&var=690908923550&_trksid=p2060353.m1438.l2649
+
+## Raspberry einrichten 
+https://www.elektronik-kompendium.de/sites/raspberry-pi/index.htm#a1
+
+Ich habe die Einrichtung über SSH gemacht. Hierzu ist "Putty" ein gutes Programm für Windows. ACHTUNG SSH muss im Raspberry erst aktiviert werden.
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+Die folgenden Befehle sind für die Eingabe in das Terminal.
+### Denk daran die Kamera zu aktivieren!
+
+### Check auf Updates für den Rasberry eingabe in CMD (sollte man sich für später merken und ab un zu mach ausführen)
+```sudo apt-get update```
+
+```sudo apt-get upgrade```
+
+### Installiere folgende Pakete per CMD auf dem Raspberry damit das Skript problemlos läuft
+```sudo apt-get install python3-opencv```
+
+```sudo apt-get install libqt4-test python3-sip python3-pyqt5 libqtgui4 libjasper-dev libatlas-base-dev -y```
+
+```pip3 install opencv-contrib-python==4.1.0.25```
+
+```sudo modprobe bcm2835-v4l2```
+
+```sudo apt-get install sqlite3```
+
+#### SQLite Browser installieren (optional) macht es meiner Ansicht nach einfacher später auf der graphischen Oberfläche
+```sudo apt-get update```
+
+```sudo apt-get install sqlitebrowser```
+
+### Remote Desktopverbindung (optional) wird aber für den Zugriff der graphischen Oberfläche auf den Raspberry ohne Tastatur und Bildschirm benötigt.
+```sudo apt-get install xrdp```
+
+Jetzt kann man sich mit der Remote Desktopverbindung von Windows und der IP-Adresse des Raspberry auf dem Raspberry einloggen.
+
+### Software installation Automat
+1. Kopiere den Ordner "Belohnungsautomat" auf den Desktop des Raspberry
+2. Progamm in die Autostart-Varianten einfügen damit ich auch immer läuft ;)
+- Autostart vor Login
+
+   ```sudo nano /etc/rc.local```
+   
+   Dort eintragen: ```/home/pi/Desktop/Belohnungsautomat/main.py &``` mit & Zeichen.
+   
+   Mit STRG + O speichern und mit STRG + X schließen
+        
+- Auotstar nach Login mit öffenen des DEBUG Fensters
+
+    ```sudo nano /etc/xdg/lxsession/LXDE-pi/autostart```
+    
+    Hier einfügen:
+    ```@lxterminal -e python3 /home/pi/Desktop/Belohnungsautomat/main.py``` 
+        
+### Software in Betrieb nehmen
+1. Die Datenbank für die QR-Werte ist schon gefüllt und enthält 10000 Werte ich hoffe das reicht für den Anfang.
+2. Die Datenbank für die Belohnungen (Spiralen) muss noch mit der Anzahl der eingesetzten Belohnungen gefüllt werden.
+
+     ```python3 /home/pi/Desktop/Belohnungsautomat/spiralen_nachfüllen.py``` 
+
+
+
+
+
+Quellen: https://www.hackster.io/gatoninja236d/scan-qr-codes-in-real-time-with-raspberry-pi-a5268b
