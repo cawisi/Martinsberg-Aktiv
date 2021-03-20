@@ -34,6 +34,10 @@ Benutzername ist Standardmäßig "pi" mit dem Standardpasswort "raspberry" ände
   einfach Anzahl der Belohnungen je Spirale eingeben.
   
 ## Backup erstellen:
+```lsblk```
+
+Zeigt die angeschlossenen Festplatten "mmcblk0" ist die SD-Karte auf der das Betriebssystem läuft und "sda1" der angeschlossene USB-Stick unter der Spalte "Mountpoint" seht ihr das Dateienverzeichnis um auf den USB-Stick zu schreiben ("/media/pi/EUER_USB_DEVICE")
+
 ```sudo dd if=/dev/mmcblk0 of=/media/pi/EUER_USB_DEVICE/abbild.img status=progress```
 
 Erstellt auf dem USB-Stick "EUER_USB_DEVICE" eine Datei mit dem Namen "abbild.img" dies ist das Backup des kompletten Systems.
