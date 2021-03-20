@@ -30,9 +30,10 @@ def db_erstellen(verbindung):
 def db_eingabe(verbindung,spalte,eingabe):
     zeiger = verbindung.cursor()
     
-    zeiger.execute("INSERT INTO (" + spalte + ") VALUES (?)", (eingabe,))
+    zeiger.execute("INSERT INTO werte (" + spalte + ") VALUES (?)", (eingabe,))
 
     verbindung.commit()
+    print("Eingefügt")
     
 def db_delete(verbindung,eingabe):
     zeiger = verbindung.cursor()
@@ -88,6 +89,7 @@ def db_update_wert(verbindung,spalte,eingabe):
         zeiger.execute("Update restauswurf SET (" + spalte + ") = (?) WHERE 1=rowid ",(eingabe,))
         verbindung.commit()
         zeiger.close()
+        print("Wert geupdated")
 
     except sqlite3.Error as error:
         print("Failed to read data from sqlite table", error)
