@@ -44,7 +44,7 @@ Erstellt auf dem USB-Stick "EUER_USB_DEVICE" eine Datei mit dem Namen "abbild.im
 Wichtig ist der USB-Stick muss größer sein als die Verwendete SD-Karte im Raspberry Pi, da er ein komplettes Backup erstellt. Bedeutet SD-Karten-Größe = Größe des Backups
 
 ### Backup verkleinern
-```cd /media/EUER_USB_DEVICE```
+```cd /media/pi/EUER_USB_DEVICE```
 
 ```sudo pishrink.sh abbild.img```
 
