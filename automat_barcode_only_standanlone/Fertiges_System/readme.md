@@ -25,7 +25,7 @@ Benutzername ist Standardmäßig "pi" mit dem Standardpasswort "raspberry" ände
 - Sprache und Layout ist auf Deutsch
 -  ```python3 /home/pi/Desktop/Belohnungsautomat/test_qrwert.py```
 
-  fügt einen Testwert in die QR-Datenbank ein um das System leichter zu testen mit einem QR-Code, welcher nicht so lang und kompliziert ist wie aus der "qrwert.csv". Ich benutze meistens den Wert 1
+    fügt einen Testwert in die QR-Datenbank ein um das System leichter zu testen mit einem QR-Code, welcher nicht so lang und kompliziert ist wie aus der "qrwert.csv". Ich       benutze   meistens den Wert 1
 ## Was muss noch gemacht werden?
 - Wenn Spirale mit Belohnungen gefüllt ist muss diese auf in der Datenbank gefüllt werden.
 
