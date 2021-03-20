@@ -2,7 +2,7 @@
 Dies kann einfach Installiert werden und euer Raspberry läuft.
 Benutzername ist Standardmäßig "pi" mit dem Standardpasswort "raspberry" ändert dieses Passwort am besten!
 
-### Gebraucht wird ein Raspberry Pi 3B mit MicroSD Card
+### Gebraucht wird ein Raspberry Pi 3B mit 8 GB MicroSD Card
 
 ## Installation mit PI Imager
 
