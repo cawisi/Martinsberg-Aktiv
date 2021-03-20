@@ -2,6 +2,10 @@
 Dies kann einfach Installiert werden und euer Raspberry läuft.
 Benutzername ist Standardmäßig "pi" mit dem Standardpasswort "raspberry" ändert dieses Passwort am besten!
 
+## Hier der Link zum Image in meinem Google Cloud speicher. Einfach herunterladen und viel Spaß!
+#### https://drive.google.com/drive/folders/1gDN3yqZQ6Y96nVo39mk70n5CG2xuAMh2?usp=sharing
+
+
 ### Gebraucht wird ein Raspberry Pi 3B mit 8 GB MicroSD Card
 
 ## Installation mit PI Imager
