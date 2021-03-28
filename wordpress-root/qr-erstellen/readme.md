@@ -87,7 +87,7 @@ for ($i=1; $i<=8; $i++) {
 
       $tempbild = "../qr-erstellen/qrbild/";
       echo '<img src="'.$tempbild.$codeContents.'_erstellt.png"/>';
-      echo '<p><a href="'.$tempbild.$codeContents.'_erstellt.png">Download</a></p>';
+      echo '<p> <a href="../qr-erstellen/download.php?path='.$codeContents.'_erstellt.png">Download QR-Code</a></p>';
     } else {
       if ($AnzahlBesuchterSchilder == 7) {
         echo "<h2>Dir fehlt noch das folgende Schild: $FehlendeSchilderStr\n</h2>";
