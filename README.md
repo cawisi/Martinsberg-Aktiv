@@ -40,30 +40,6 @@ CREATE TABLE `eue_schild_scans` (
 ) ENGINE=InnoDB AUTO_INCREMENT=4174 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci
 ```
 
-Für den Belohungsautomaten
-
-```SQL
-eue_automat_feedback	CREATE TABLE `eue_automat_feedback` (
- `id` int(11) NOT NULL AUTO_INCREMENT,
- `zeit` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
- `automaten_zeit` timestamp NULL DEFAULT NULL,
- PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1174843 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci
-
-
-CREATE TABLE `eue_automat_status` (
- `id` int(11) NOT NULL AUTO_INCREMENT,
- `zeit` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
- `sessionID` varchar(32) COLLATE latin1_german1_ci DEFAULT NULL,
- `Slot0` tinyint(1) NOT NULL DEFAULT '1',
- `Slot1` tinyint(1) NOT NULL DEFAULT '1',
- `Slot2` tinyint(1) NOT NULL DEFAULT '1',
- `Slot3` tinyint(1) NOT NULL DEFAULT '1',
- `Slot4` tinyint(1) NOT NULL DEFAULT '1',
- PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=169 DEFAULT CHARSET=latin1 COLLATE=latin1_german1_ci
-
-```
 
 ## Änderungen an Wordpress
 
