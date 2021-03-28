@@ -7,7 +7,7 @@ def db_connection(db):
         print("Connected to ",db)
         return connection
     else:
-        print("ERROR Connection: ",db )
+        print("ERROR Failed Connection: ",db )
         sys.exit(0)
    
 def db_close(verbindung):
@@ -33,7 +33,7 @@ def db_eingabe(verbindung,spalte,eingabe):
     zeiger.execute("INSERT INTO werte (" + spalte + ") VALUES (?)", (eingabe,))
 
     verbindung.commit()
-    print("Eingefügt")
+    print("Eingefügt in " , spalte)
     
 def db_delete(verbindung,eingabe):
     zeiger = verbindung.cursor()
@@ -78,6 +78,7 @@ def db_get_wert(verbindung, spalte):
             zurueck = None
         
         zeiger.close()
+        #print(zurueck)
         return zurueck
 
     except sqlite3.Error as error:
@@ -89,7 +90,7 @@ def db_update_wert(verbindung,spalte,eingabe):
         zeiger.execute("Update restauswurf SET (" + spalte + ") = (?) WHERE 1=rowid ",(eingabe,))
         verbindung.commit()
         zeiger.close()
-        print("Wert geupdated")
+        print("Restauswurf Wert geupdated")
 
     except sqlite3.Error as error:
         print("Failed to read data from sqlite table", error)
